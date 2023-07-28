@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 1 -->
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link active">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">Next</a>
+            </li>
+        </ul>
+
+
+        <!-- 2 -->
+        <table class="table">
+            <tbody>
+                <tr class="table-primary">
+                    <td>Primary</td>
+                    <td>Joe</td>
+                    <td>joe@example.com</td>
+                </tr>
+                <tr class="table-success">
+                    <td>Success</td>
+                    <td>Doe</td>
+                    <td>doe@example.com</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>Danger</td>
+                    <td>Moe</td>
+                    <td>moe@example.com</td>
+                </tr>
+                <tr class="table-info">
+                    <td>Primary</td>
+                    <td>Dooley</td>
+                    <td>dooley@example.com</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>Primary</td>
+                    <td>Refs</td>
+                    <td>refs@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <!-- 3 -->
+        <div class="progress ">
+            <div class="progress-bar bg-primary progress-bar-animated progress-bar-striped " style="width:40%;">Data
+            </div>
+        </div>
+
+
+        <!-- 4 -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modal1" data-bs-toggle="modal"
+            data-bs-target="#modal1">Open Modal</button>
+        <div class="modal fade" id="modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Modal Heading</h3>
+                        <button class="btn btn-close" data-toggle="modal" data-target="#modal1" data-bs-toggle="modal"
+                            data-bs-target="#modal1"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos iure quas error
+                            repellendus facilis blanditiis, animi doloremque tempora asperiores perspiciatis obcaecati
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#modal1" data-bs-toggle="modal"
+                            data-bs-target="#modal1">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 5 -->
+        <div class="row mt-5">
+            <div class="col-4 bg-light p-2">
+                <div class="row m-0">
+                    <div class="col mx-1 bg-white p-4 text-center">Auto-Column</div>
+                    <div class="col mx-1 bg-white p-4 text-center">Auto-Column</div>
+                </div>
+            </div>
+            <div class="col-4 bg-light p-2">
+                <div class="row m-0">
+                    <div class="col-6 border border-danger bg-white p-4 text-center">Auto-Column</div>
+                    <div class="col-4 border border-danger bg-white p-4 text-center">Auto-Column</div>
+                    <div class="col-2 border border-danger bg-white p-4 text-center">Auto-Column</div>
+                </div>
+            </div>
+            <div class="col-4 bg-light p-2">
+                <div class="row m-0">
+                    <div class="col bg-white p-4 text-center">Auto-Column</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 6 -->
+
+        <div class="form-group mt-5">
+            <input type="range" class="form-range" />
+        </div>
+
+
+        <!-- 7 -->
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control is-invalid" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fname">Last Name</label>
+                    <input type="text" class="form-control is-invalid" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="fname">Username</label>
+                    <div class="btn-group w-100 form-inline">
+                        <span class="btn disabled btn-secondary ">@</span>
+                        <input type="text" class="btn text-start form-control is-invalid" />
+                    </div>
+                    <span class="text-danger">Please Choose a username</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="fname">City</label>
+                    <input type="text" class="form-control is-invalid" />
+                    <span class="text-danger">Please Provide a city</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="fname">State</label>
+                    <select class="form-select is-invalid">
+                        <option>Choose...</option>
+                    </select>
+                    <span class="text-danger">Please select a valid state</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="fname">Zip</label>
+                    <input type="text" class="form-control is-invalid" />
+                    <span class="text-danger">Please provide a valid Zip</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="mt-5"></div>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#popOver" data-bs-toggle="collapse"
+            data-bs-target="#popOver">PopOver</button>
+        <div class="popover collapse" id="popOver">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ducimus facere, eos nostrum impedit
+                recusandae cum quaerat maxime molestiae nemo, tenetur dicta quae maiores deleniti. Enim dicta a et
+                totam!</p>
+        </div>
+
+
+        <!-- 9 -->
+        <div class="mt-5"></div>
+        <div class="alert alert-primary" role="alert">
+            A type of alert
+        </div>
+
+
+        <!-- 10 -->
+        <div class="progress">
+            <div class="progress-bar" style="width: 25%;">25%</div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
